@@ -3,7 +3,7 @@ Progressive Delivery is a term that was term that was coined in 2018 by James Go
 
 Progressive Delivery includes delivery techniques like canary deployments, feature flags or A/B testing.
 
-![]()
+![](./img//01-01_progressive.png)
 
 In canary deployments, a new feature gets deployed first to a subset of customers, and after gathering telemetry, it gets deployed to more and more users if the telemetry is positive, or gets rolled back, if telemetry alerts us of possible problems.
 

@@ -3,20 +3,20 @@ The first way in which to implement Progressive Delivery in Kubernetes that we a
  ## What is Kubernetes Service Networking?
 If you have created a Kubernetes Deployment before, you know that you can have several replicas of the same Pod created as part of a Deployment. You may want to create several replicas of your workload for two main reasons:
 
-  * High Availability. If you only have one replica of your workload and the Pod crashes or gets rescheduled, there will be some downtime for your service while the Pod gets restarted.
-  * Horizontal Scaling. As your service gets more traffic, you may need to create more replicas of your workload to serve the extra traffic.
+  * **High Availability.** If you only have one replica of your workload and the Pod crashes or gets rescheduled, there will be some downtime for your service while the Pod gets restarted.
+  * **Horizontal Scaling.** As your service gets more traffic, you may need to create more replicas of your workload to serve the extra traffic.
 
 So, if you have several replicas of the same Pod, when a client wants to talk to your service, which Pod is selected?
 
-![](./img/png)
+![](./img/03-01_whichpod.png)
 
 This load balancing between the multiple replicas of the same workload is done in Kubernetes through a core virtual object called the Kubernetes Service.
 
 To implement Service Networking, Kubernetes uses a component called kube-proxy, deployed to every node of a Kubernetes cluster:
 
-![](./img/png)
+![](./img/03-02_kubeproxy.png)
 
- ##Progressive Delivery using Service Networking
+ ## Progressive Delivery using Service Networking
  
 kube-proxy updates regularly the list of service and related endpoints that are available. But how does kube-proxy know that a Pod should be part of endpoints pool of a service?
 
@@ -26,13 +26,13 @@ If we create a Deployment, we can assign labels to all the pods created and mana
 
 When we create the corresponding Kubernetes Service, we add the labels that the Service should select as endpoints for that particular service:
 
-![](./img/png)
+![](./img/03-03_selector.png)
 
 kube-proxy will select as Endpoints for that particular service any Pod in the cluster that has at least the labels app:website and service:discounts (Pod needs to have both labels). If a particular Pod has those two labels/values, and it has other labels as well, that Pod will be selected as well. Every Pod in the same Endpoints pool will be selected with the same weight.
 
 To implement Progressive Delivery with Service Networking, the only thing that we need to do is to create a second Deployment with the new version of our workload, but using the exact same labels as the ones in the Service selector:
 
-![](./img/.png)
+![](./img/03-04_progressiveservice1.png)
 
 As the Service will select one of the Pods with the app:website and the service:discounts labels, and every Pod has the same weight within the pool, then 25% of the traffic will go to the newer version of our workload. We are effectively already doing progressive delivery!
 

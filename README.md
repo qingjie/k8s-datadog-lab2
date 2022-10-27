@@ -8,8 +8,11 @@
 
 ## Progress delivery
 
-  ### [lab 1](lab1.md)
-
+  ### Progress delivery
+  
+  ### Introduction to the Lab
+   
+  ### [Lab: Deploying the Datadog Agent](lab1.md)
 
 ## Service Networking
  

@@ -16,15 +16,21 @@
 
 ## Service Networking
  
- ### [lab 2](lab2.md)
+ ### Service Networking
+ 
+ ### [Lab: Progressive Delivery in K8s with Service Networking](lab2.md)
 
 ## Ingress
 
- ### [lab 3](lab3.md)
+ ### Ingress
+ 
+ ### [Lab: Progressive Delivery in K8s with Ingress](lab3.md)
 
 ## Service Meshes
+
+  ### Service Meshes
   
-  ### [lab 4](lab5.md)
+  ### [Lab: Progressive Delivery in K8s with Service Meshes](lab4.md)
 
 ## Course Conclusion
 

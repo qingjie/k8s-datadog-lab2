@@ -8,7 +8,7 @@
 
 ## Progress delivery
 
-  ### lab 1
+  ### [lab 1](lab1.md)
 
 
 ## Service Networking

@@ -12,14 +12,16 @@
 
 
 ## Service Networking
-  ### lab 2
+ 
+ ### [lab 2](lab2.md)
 
 ## Ingress
 
-  ### lab 3
+ ### [lab 3](lab3.md)
 
 ## Service Meshes
-  ### lab 4
+  
+  ### [lab 4](lab5.md)
 
 ## Course Conclusion
 

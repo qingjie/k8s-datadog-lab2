@@ -8,29 +8,29 @@
 
 ## Progress delivery
 
-  ### [Progress delivery](lab1-1.md)
+  * ### [Progress delivery](lab1-1.md)
   
-  ### [Introduction to the Lab](lab1-2.md)
+  * ### [Introduction to the Lab](lab1-2.md)
    
-  ### [Lab: Deploying the Datadog Agent](lab1-3.md)
+  * ### [Lab: Deploying the Datadog Agent](lab1-3.md)
 
 ## Service Networking
  
- ### [Service Networking](lab2-1.md)
+ * ### [Service Networking](lab2-1.md)
  
- ### [Lab: Progressive Delivery in K8s with Service Networking](lab2-2.md)
+ * ### [Lab: Progressive Delivery in K8s with Service Networking](lab2-2.md)
 
 ## Ingress
 
- ### [Ingress](lab3-1.md)
+ * ### [Ingress](lab3-1.md)
  
- ### [Lab: Progressive Delivery in K8s with Ingress](lab3-2.md)
+ * ### [Lab: Progressive Delivery in K8s with Ingress](lab3-2.md)
 
 ## Service Meshes
 
-  ### [Service Meshes](lab4-1.md)
+  * ### [Service Meshes](lab4-1.md)
   
-  ### [Lab: Progressive Delivery in K8s with Service Meshes](lab4-2.md)
+  * ### [Lab: Progressive Delivery in K8s with Service Meshes](lab4-2.md)
 
 ## Course Conclusion
 

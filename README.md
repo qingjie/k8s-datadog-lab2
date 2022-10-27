@@ -1,5 +1,7 @@
 ## Course Overview
 
+  ### Introduction
+  
   * Will a new version of my service drive more usage? Will it reduce or increase the overall latency of my application? Can I easily test it in production for a set of users first? Progressive delivery, A/B testing, and canary deployments are strategies that help answer those questions by splitting network traffic in a controlled manner, allowing you to make informed decisions on the quality of a release.
 
   * In this course we will demonstrate several strategies to implement progressive delivery in Kubernetes. You will learn which of those strategies is best suited to your organization needs and how a good observability strategy is key to be successful with progressive delivery.
@@ -33,6 +35,8 @@
   * ### [Lab: Progressive Delivery in K8s with Service Meshes](lab4-2.md)
 
 ## Course Conclusion
+
+  ### Summary
 
   * In this course you have learned different ways to implement progressive delivery in Kubernetes, like service networking, ingress or service meshes.
 
